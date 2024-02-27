@@ -4,7 +4,7 @@ let bountyString = document.getElementById("points");
 
 window.addEventListener("load", () => {
     let total = parseInt(getCookie("points"))
-    if(!total.isNaN()) {
+    if(!Number.isNaN(total)) {
         points = total;
     } else {
         points = 0;
