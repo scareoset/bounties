@@ -2,13 +2,27 @@
     site colors
         background: #121517
         text:       #fafaff
-        accent:     #xxxxxx
 */
 
 body {
     background-color: #121517;
     color: #fafaff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #fafaff;
+    color: #fafaff;
+    background-color: #121517;
+}
+
+button:hover {
+    color: white;
+    border-color: white;
+    background-color: black;
 }
 
 main {
