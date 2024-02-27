@@ -3,7 +3,12 @@ var dailyBountyCompleted = false;
 let bountyString = document.getElementById("points");
 
 window.addEventListener("load", () => {
-    points = parseInt(getCookie("points"));
+    let total = parseInt(getCookie("points"))
+    if(total === NaN) {
+        points = total;
+    } else {
+        points = 0;
+    }
     bountyString.innerHTML = pointsToString();
 });
 
